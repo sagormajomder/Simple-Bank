@@ -43,7 +43,7 @@ const mainFunction = function () {
    });
    wSubmit.addEventListener("submit", function () {
       let wAmount = Number(wBox.value);
-      totalWidthraw -= wAmount;
+      totalWidthraw += wAmount;
       totalBalance -= wAmount;
       printValue(wBox);
    });
