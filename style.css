@@ -40,6 +40,7 @@ body {
    font-weight: 400;
    color: var(--color);
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
 a:link,
@@ -158,8 +159,8 @@ input {
    color: #fff;
 }
 .status {
-   max-width: 90%;
-   padding: 2.4rem 1.2rem;
+   width: 90%;
+   padding: 2.4rem 1.6rem;
    border-radius: 11px;
 }
 
@@ -168,7 +169,9 @@ input {
 }
 .widthraw {
    background-color: var(--color-bg-widthraw);
+   justify-self: center;
 }
 .balance {
    background-color: var(--color-bg-balance);
+   justify-self: end;
 }

@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) {
+   /* Transaction Area */
+   .dform,
+   .wform {
+      padding: 2.4rem 3.2rem;
+   }
+   input {
+      font-size: 1.6rem;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   /* login area */
+   .lform {
+      max-width: 100%;
+   }
+   .form {
+      padding: 4.4rem;
+   }
+   /* Transaction Area */
+   .t-box-small,
+   .t-box-form {
+      grid-template-columns: 1fr;
+   }
+   .status {
+      justify-self: unset;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   input {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   /* login area */
+   .section-login .primary-heading {
+      font-size: var(--h2);
+   }
+   .form {
+      padding: 3.2rem;
+   }
+   /* Transaction Area */
+}
