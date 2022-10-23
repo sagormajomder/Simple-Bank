@@ -1,0 +1,174 @@
+:root {
+   /* color */
+   --color: #333;
+   --color-bg-deposit: #6a5acd;
+   --color-bg-deposit-hover: #5548a4;
+   --color-bg-widthraw: #ffa07a;
+   --color-bg-balance: #ffa500;
+
+   /* font */
+   --poppins: "Poppins", sans-serif;
+
+   --h1: 4.4rem;
+   --h2: 3.6rem;
+   --h3: 3rem;
+   --h4: 2.4rem;
+   --h5: 2rem;
+   --h6: 1.8rem;
+
+   --p: 1.8rem;
+
+   --normal: 400;
+   --mediam: 500;
+   --semi-bold: 600;
+   --bold: 700;
+}
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+}
+body {
+   font-family: var(--poppins);
+   line-height: 1.5;
+   font-weight: 400;
+   color: var(--color);
+   box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+   display: inline-block;
+}
+
+img {
+   max-width: 100%;
+}
+/*? Layout System */
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+   padding: 0 3.2rem;
+}
+.grid {
+   display: grid;
+   column-gap: 6.4rem;
+   row-gap: 4.8rem;
+}
+
+.grid:not(:last-child) {
+   margin-bottom: 9.6rem;
+}
+
+.grid--2--cols {
+   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+   grid-template-columns: repeat(3, 1fr);
+}
+
+/*? Helper Class */
+.text-center {
+   text-align: center;
+}
+.margin-bt-sm {
+   margin-bottom: 1.6rem;
+}
+.margin-bt-md {
+   margin-bottom: 3.2rem;
+}
+.hidden {
+   display: none;
+}
+
+/*? Common class */
+.primary-heading {
+   font-size: var(--h1);
+   font-weight: var(--bold);
+}
+.secondary-heading {
+   font-size: var(--h2);
+   font-weight: var(--bold);
+}
+
+.heading-tertiary {
+   font-size: var(--h3);
+   font-weight: var(--semi-bold);
+   color: var(--color);
+}
+
+.subheading {
+   display: block;
+   font-size: 1.6rem;
+   font-weight: var(--mediam);
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 2.4rem;
+   padding: 6.4rem;
+   border-radius: 9px;
+   box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.2);
+}
+
+/* Custom CSS */
+/* //////////////////// */
+/* Login Section */
+/* //////////////////// */
+.section-login {
+   padding: 4.8rem 0 6.4rem 0;
+}
+.lform {
+   max-width: 70%;
+   margin: 0 auto;
+}
+
+input {
+   padding: 1.2rem 0.8rem;
+   font-size: var(--p);
+   border-radius: 5px;
+   border: none;
+   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+   color: #fff;
+   width: max-content;
+   padding: 1.2rem 3.2rem;
+   background-color: var(--color-bg-deposit);
+   transition: all 0.3s;
+}
+.btn:hover {
+   background-color: var(--color-bg-deposit-hover);
+}
+
+/* //////////////////// */
+/* Transaction Section */
+/* //////////////////// */
+.section-transaction {
+   padding: 4.8rem 0 6.4rem 0;
+   color: #fff;
+}
+.status {
+   max-width: 90%;
+   padding: 2.4rem 1.2rem;
+   border-radius: 11px;
+}
+
+.deposit {
+   background-color: var(--color-bg-deposit);
+}
+.widthraw {
+   background-color: var(--color-bg-widthraw);
+}
+.balance {
+   background-color: var(--color-bg-balance);
+}

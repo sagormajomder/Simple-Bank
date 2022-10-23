@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Simple Bank</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- Login Area Section -->
+      <section class="section-login">
+         <div class="container margin-bt-md">
+            <h1 class="primary-heading text-center">Welcome to simple bank</h1>
+         </div>
+         <div class="container">
+            <form action="#" class="form lform">
+               <input type="text" name="" placeholder="Email" />
+               <input type="password" name="" placeholder="Password" />
+
+               <input class="btn btn-cta" type="submit" value="Enter" />
+            </form>
+         </div>
+      </section>
+      <!-- Transaction Section -->
+      <section class="section-transaction hidden">
+         <div class="container grid grid--3--cols">
+            <div class="deposit status">
+               <span class="subheading margin-bt-sm">Deposit</span>
+               <h2 class="secondary-heading">
+                  $ <span class="d-money">00</span>
+               </h2>
+            </div>
+            <div class="widthraw status">
+               <span class="subheading margin-bt-sm">Widthraw</span>
+               <h2 class="secondary-heading">
+                  $ <span class="w-money">00</span>
+               </h2>
+            </div>
+            <div class="balance status">
+               <span class="subheading margin-bt-sm">Balance</span>
+               <h2 class="secondary-heading">
+                  $ <span class="b-money">1300</span>
+               </h2>
+            </div>
+         </div>
+         <div class="container grid grid--2--cols">
+            <form action="#" class="form dform">
+               <h3 class="heading-tertiary">Deposit</h3>
+               <input
+                  class="d-box"
+                  type="text"
+                  name=""
+                  placeholder="$ amount you want to deposit"
+               />
+
+               <input class="btn btn-cta" type="submit" value="Deposit" />
+            </form>
+
+            <form action="#" class="form wform">
+               <h3 class="heading-tertiary">Widthraw</h3>
+               <input
+                  class="w-box"
+                  type="text"
+                  name=""
+                  placeholder="$ amount you want to widthraw"
+               />
+
+               <input class="btn btn-cta" type="submit" value="Widthraw" />
+            </form>
+         </div>
+      </section>
+      <script src="./app.js"></script>
+   </body>
+</html>
